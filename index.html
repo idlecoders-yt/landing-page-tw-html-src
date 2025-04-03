@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Idlecoders</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom animation for bounce in */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeInUp {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-6">
+          <div class="text-3xl font-extrabold text-indigo-600 animate-fadeInUp">
+            Idlecoders
+          </div>
+          <nav class="hidden md:flex space-x-10">
+            <a
+              href="#"
+              class="text-base font-medium text-gray-700 hover:text-indigo-600 transition duration-300"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-base font-medium text-gray-700 hover:text-indigo-600 transition duration-300"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-base font-medium text-gray-700 hover:text-indigo-600 transition duration-300"
+              >Projects</a
+            >
+            <a
+              href="#"
+              class="text-base font-medium text-gray-700 hover:text-indigo-600 transition duration-300"
+              >Contact</a
+            >
+          </nav>
+          <div class="md:hidden">
+            <button
+              type="button"
+              class="bg-indigo-600 inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-b from-yellow-700 via-yellow-950 to-black overflow-hidden"
+    >
+      <div class="absolute inset-0">
+        <img
+          src="https://picsum.photos/id/4/5000/3333"
+          alt="Coding Background"
+          class="w-full h-full object-cover opacity-30"
+        />
+      </div>
+      <div
+        class="relative max-w-7xl text-center mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8"
+      >
+        <h1
+          class="text-5xl font-extrabold text-white drop-shadow-xl drop-shadow-black animate-fadeInUp"
+        >
+          Build Your Dream Landing Page
+        </h1>
+        <p
+          class="mt-6 max-w-2xl mx-auto text-xl text-indigo-100 animate-fadeInUp"
+          style="animation-delay: 0.3s"
+        >
+          Create stunning, modern, and responsive designs with Tailwind CSS in
+          minutes.
+        </p>
+        <div class="mt-10 animate-fadeInUp" style="animation-delay: 0.6s">
+          <a
+            href="#"
+            class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:bg-gray-100"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold text-gray-900 animate-fadeInUp">
+            Features
+          </h2>
+          <p
+            class="mt-4 text-lg text-gray-600 animate-fadeInUp"
+            style="animation-delay: 0.3s"
+          >
+            Everything you need to build a modern, responsive landing page.
+          </p>
+        </div>
+        <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-3">
+          <!-- Feature Card -->
+          <div
+            class="p-6 bg-white rounded-lg shadow-lg transform transition duration-300 hover:scale-105 animate-fadeInUp"
+            style="animation-delay: 0.4s"
+          >
+            <div class="flex justify-center">
+              <!-- icon start (check the description) -->
+              <svg
+                class="w-12 h-12 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 7l6 6-6 6"
+                />
+              </svg>
+              <!-- icon end (check the description) -->
+            </div>
+            <h3 class="mt-4 text-2xl font-semibold text-gray-900 text-center">
+              Responsive Design
+            </h3>
+            <p class="mt-2 text-gray-600 text-center">
+              Looks great on all devices, from mobile to desktop.
+            </p>
+          </div>
+          <!-- Feature Card  End -->
+
+          <!-- Feature Card 2 Start -->
+          <div
+            class="p-6 bg-white rounded-lg shadow-lg transform transition duration-300 hover:scale-105 animate-fadeInUp"
+            style="animation-delay: 0.6s"
+          >
+            <div class="flex justify-center">
+              <!--  icon start -->
+              <svg
+                class="w-12 h-12 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <!--  icon start end -->
+            </div>
+            <h3 class="mt-4 text-2xl font-semibold text-gray-900 text-center">
+              Easy Customization
+            </h3>
+            <p class="mt-2 text-gray-600 text-center">
+              Tailwind CSS makes styling your page simple and intuitive.
+            </p>
+          </div>
+          <!-- Feature Card 2 End-->
+
+          <!-- Feature Card 3 start-->
+          <div
+            class="p-6 bg-white rounded-lg shadow-lg transform transition duration-300 hover:scale-105 animate-fadeInUp"
+            style="animation-delay: 0.8s"
+          >
+            <div class="flex justify-center">
+              \
+              <!-- icon start -->
+              <svg
+                class="w-12 h-12 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3"
+                />
+              </svg>
+              <!-- icon end -->
+            </div>
+            <h3 class="mt-4 text-2xl font-semibold text-gray-900 text-center">
+              Fast Performance
+            </h3>
+            <p class="mt-2 text-gray-600 text-center">
+              Optimized for speed and smooth user interactions.
+            </p>
+          </div>
+          <!-- Feature Card 3 end-->
+        </div>
+      </div>
+    </section>
+    <!-- Feature Section End -->
+    <!-- Call To Action Section Start -->
+    <section class="bg-gradient-to-r from-indigo-800 to-purple-500">
+      <div class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-white animate-fadeInUp">
+          Ready to Create Something Amazing?
+        </h2>
+        <p
+          class="mt-4 text-xl text-indigo-100 animate-fadeInUp"
+          style="animation-delay: 0.3s"
+        >
+          Start building your landing page with Tailwind CSS today.
+        </p>
+        <div class="mt-8 animate-fadeInUp" style="animation-delay: 0.6s">
+          <a
+            href="#"
+            class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:bg-gray-100"
+          >
+            Start Building
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Call To Action Section end -->
+    <!-- Footer Start -->
+    <footer class="bg-gray-800">
+      <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-sm text-gray-400">
+            &copy; 2025 Idlecoders. All rights reserved.
+          </p>
+          <div class="mt-4 md:mt-0">
+            <a
+              href="#"
+              class="text-sm text-gray-400 hover:text-white mx-2 transition duration-300"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="#"
+              class="text-sm text-gray-400 hover:text-white mx-2 transition duration-300"
+            >
+              Terms of Service
+            </a>
+            <a
+              href="#"
+              class="text-sm text-gray-400 hover:text-white mx-2 transition duration-300"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+  <!-- body End -->
+</html>
